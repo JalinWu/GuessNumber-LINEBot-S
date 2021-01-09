@@ -5,10 +5,15 @@ let count = 0;
 
 // 學舌鳥
 var repeatBird = function (bot) {
-    // bot.on('message', function (event) {
-    //     var userMsg = event.mssage.text;
-    //     event.reply(userMsg);
-    // });
+    bot.on('message', function (event) {
+        // 使用者輸入的內容
+        var userMsg = event.mssage.text;
+
+        // write your code here
+        // 機器人回覆使用者輸入的內容
+
+        
+    });
 }
 
 // 猜數字
