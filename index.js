@@ -3,7 +3,7 @@ if (result.error) throw result.error
 const linebot = require('linebot');
 const express = require('express');
 
-const { repeatBird, guessNumber } = require('./resource/guessNumber');
+const { repeatBird, webhookEvent, guessNumber } = require('./resource/guessNumber');
 
 // Line Channel info
 const bot = linebot({
@@ -24,4 +24,5 @@ app.listen(PORT, () => {
 });
 
 repeatBird(bot);
+webhookEvent(bot);
 guessNumber(bot);
