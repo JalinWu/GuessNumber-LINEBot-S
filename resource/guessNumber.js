@@ -7,7 +7,7 @@ let count = 0;
 var repeatBird = function (bot) {
     bot.on('message', function (event) {
         // 使用者輸入的內容
-        var userMsg = event.mssage.text;
+        var userMsg = event.message.text;
 
         // 機器人回覆使用者輸入的內容
 
